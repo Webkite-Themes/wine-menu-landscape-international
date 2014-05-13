@@ -466,6 +466,8 @@
   #webkite-results .webkite-page-input::-webkit-outer-spin-button, #webkite-results .webkite-page-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; }
+  #webkite-results input[type=number] {
+    -moz-appearance: textfield; }
 
 /********************************************** BLOCKS */
 #webkite-results .webkite-block-group {
