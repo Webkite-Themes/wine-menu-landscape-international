@@ -85,8 +85,10 @@ $colorVariant:light;
       display:block;
       }    
     + .webkite-result-body {
+      @include boxedUp;
       display:inline-block;
       position:relative;
+      width:100%;
       }
     }
   .webkite-subheadline {
@@ -107,6 +109,8 @@ $colorVariant:light;
     }
   .webkite-providence {
     margin-top:$mainGutter/2.5;
+    color:$lightOpacity;
+    opacity:0.5;
     &:empty {display:none;}
     a + a:before, 
     span + span:before, 
@@ -121,6 +125,7 @@ $colorVariant:light;
   .webkite-prices {
     height:100%;
     display:table;
+    width:100%;
     & > .webkite-block {
       display:table-cell;
       vertical-align:middle;
@@ -140,7 +145,6 @@ $colorVariant:light;
     font-size:0.65em;
     text-transform: uppercase;
     display:inline-block;
-    width:100%;
     color: $lightOpacity;
     }
   a.more-button, a.less-button{
@@ -288,8 +292,6 @@ $colorVariant:light;
       }
     .webkite-price-label{
       font-size:0.65em;
-      text-transform: uppercase;
-      display:inline;
       }
     }
   .webkite-branding-area{padding-bottom: $mainGutter;}
@@ -334,8 +336,6 @@ $colorVariant:light;
       }
     .webkite-price-label{
       font-size:0.65em;
-      text-transform: uppercase;
-      display:inline;
       }
     }
   }
@@ -348,6 +348,9 @@ $colorVariant:light;
       padding-left:$imageWidthMd + $mainGutter;
       }
     }
+  .webkite-prices-wrap {padding-left:0;}
+  .webkite-prices {margin-left:0;}
+  .webkite-price-label {width:100%;}
   }
 
 /*************************** DISPLAY RULES */
