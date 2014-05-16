@@ -110,7 +110,7 @@ $colorVariant:dark;
   .webkite-providence {
     margin-top:$mainGutter/2.5;
     color:$lightOpacity;
-    opacity:0.75;
+    span {opacity:0.75;}
     &:empty {display:none;}
     a + a:before, 
     span + span:before, 
