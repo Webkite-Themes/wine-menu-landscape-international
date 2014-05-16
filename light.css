@@ -396,7 +396,7 @@
   height: auto;
   width: 1.5em;
   position: absolute;
-  left: 66px;
+  left: 72px;
   top: -1px;
   bottom: -1px; }
 #webkite-results .all-current-filters {
@@ -415,7 +415,7 @@
   position: absolute;
   top: -1px;
   right: -1px;
-  left: 73px;
+  left: 72px;
   z-index: 3; }
   #webkite-results .all-current-filters .all-filters-wrapper {
     white-space: normal; }
