@@ -532,6 +532,8 @@
     display: inline-block;
     position: relative;
     width: 100%; }
+#webkite-results .webkite-wine-name {
+  display: inline-block; }
 #webkite-results .webkite-subheadline {
   margin-bottom: 2px;
   font-family: 'Libre Baskerville', 'Georgia', serif;
