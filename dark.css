@@ -221,16 +221,16 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: inline-block;
     height: 28px;
-    padding: 3px 25px 3px 69px;
+    padding: 5px 25px 5px 73px;
     position: relative;
     width: 100%;
     text-align: left;
     /* and & or */ }
     #webkite-results .current-filters span {
       color: rgba(127, 127, 127, 0.7);
-      font-size: 13px;
-      line-height: 20px;
-      padding: 0 5px;
+      font-size: 14px;
+      line-height: 1.2em;
+      padding: 0 0.41667em 0 0;
       vertical-align: top; }
   #webkite-results .webkite-applied-filters > .webkite-toggle {
     background: rgba(0, 0, 0, 0.85);
@@ -254,17 +254,15 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.7);
     font: 700 14px/1 'Open Sans', 'Arial', sans-serif;
-    padding: 3px 6px 3px 10px;
+    padding: 0 0.625em;
     height: 28px;
-    width: 68px;
     text-align: left; }
     #webkite-results .webkite-applied-filters > .webkite-toggle i {
       background: url("plus-dark.png") no-repeat;
       display: inline-block;
       height: 12px;
       width: 12px;
-      margin-left: 5px;
-      margin-right: -3px;
+      margin-left: 8px;
       pointer-events: none;
       position: relative;
       top: 1px; }
@@ -274,6 +272,8 @@
     overflow: hidden;
     white-space: nowrap;
     width: 100%; }
+    #webkite-results .filter-token-wrapper > span:first-child {
+      padding-left: 0.41667em; }
   #webkite-results a.webkite-remove-filter {
     display: inline-block;
     max-width: 100%;
@@ -286,12 +286,13 @@
     -o-border-radius: 2px;
     border-radius: 2px;
     color: white;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 1;
     max-width: 100px;
-    padding: 0 5px;
+    padding: 0.0625em 0.3125em;
     text-align: left;
-    word-wrap: normal; }
+    word-wrap: normal;
+    margin-right: 0.41667em; }
     #webkite-results a.webkite-remove-filter:hover {
       text-decoration: line-through; }
   #webkite-results [class^="filter-group"] {
@@ -409,15 +410,17 @@
   box-sizing: border-box;
   background: white;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  line-height: 16px;
-  padding: 5px 25px 5px 5px;
+  line-height: 19px;
+  padding: 5px 25px 2px 5px;
   position: absolute;
   top: -1px;
   right: -1px;
-  left: 66px;
+  left: 73px;
   z-index: 3; }
   #webkite-results .all-current-filters .all-filters-wrapper {
     white-space: normal; }
+    #webkite-results .all-current-filters .all-filters-wrapper > span:first-child {
+      padding-left: 0; }
     #webkite-results .all-current-filters .all-filters-wrapper [class^="filter-group"] {
       display: inline; }
 

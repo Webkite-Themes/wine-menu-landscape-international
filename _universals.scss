@@ -320,7 +320,7 @@ $tokenFifth: #6f7ca8;
       border: 1px solid $lighterOpacity;
       display: inline-block;
       height: 28px;
-      padding: 3px 25px 3px 69px;
+      padding: 5px 25px 5px 73px;
       position: relative;
       width: 100%;
       text-align: left;
@@ -328,9 +328,9 @@ $tokenFifth: #6f7ca8;
       span{
         @if $colorVariant == light{color: $lightOpacity;} 
         @if $colorVariant == dark{color: $lightOpacity/2;} 
-        font-size: 13px;
-        line-height: 20px;
-        padding: 0 $mainGutter/4;
+        font-size: 14px;
+        line-height: 1.2em;
+        padding: 0 0.41667em 0 0;
         vertical-align: top;
         }
       }
@@ -352,9 +352,8 @@ $tokenFifth: #6f7ca8;
       @if $colorVariant == light{background-clip: padding-box;} 
       color: $lightOpacity;
       font: 700 14px/1 'Open Sans', 'Arial', sans-serif;
-      padding: 3px 6px 3px $mainGutter/2;
+      padding: 0 0.625em;
       height: 28px;
-      width:68px;
       text-align:left;
       i{
         @if $colorVariant == light{background: url("plus-light.png") no-repeat;} 
@@ -362,8 +361,7 @@ $tokenFifth: #6f7ca8;
         display: inline-block;
         height: 12px;
         width: 12px;
-        margin-left: $mainGutter/4;
-        margin-right: -3px;
+        margin-left: $mainGutter/2.5;
         pointer-events: none;
         position:relative;
         top:1px;
@@ -375,18 +373,20 @@ $tokenFifth: #6f7ca8;
       overflow: hidden;
       white-space: nowrap;
       width: 100%;
+      & > span:first-child {padding-left:0.41667em;}
       }
     /* tokens */
     a.webkite-remove-filter{
       @include ellipsisThis;
-      @include roundedUp (2px);
+      @include roundedUp(2px);
       color: white;
-      font-size: 13px;
-      line-height: 20px;
+      font-size: 14px;
+      line-height: 1;
       max-width: 100px;
-      padding: 0 $mainGutter/4;
+      padding: 0.0625em 0.3125em;
       text-align: left;
       word-wrap: normal;
+      margin-right:0.41667em;
       &:hover{text-decoration: line-through;}
       }
     [class^="filter-group"]{
@@ -505,15 +505,16 @@ $tokenFifth: #6f7ca8;
       @include boxedUp;
       background: white;
       border: 1px solid $lighterOpacity;
-      line-height: 16px;
-      padding: $mainGutter/4 25px $mainGutter/4 $mainGutter/4;
+      line-height: 19px;
+      padding: $mainGutter/4 25px $mainGutter/10 $mainGutter/4;
       position: absolute;
       top:-1px;
       right:-1px;
-      left:66px;
+      left:73px;
       z-index: 3;
       .all-filters-wrapper{
         white-space: normal;
+        & > span:first-child {padding-left:0;}
         [class^="filter-group"]{display: inline;}
         }
       }
