@@ -1,5 +1,40 @@
 @import url("//fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+/************************************** ELEMENT QUERIES */
+#webkite-results.xs .webkite-title-area, #webkite-results.xs .webkite-branding-area, #webkite-results.xs .webkite-pagination-area {
+  width: 100%;
+  padding-right: 0;
+  text-align: center; }
+#webkite-results.xs .webkite-filter-area, #webkite-results.xs .webkite-sort-area, #webkite-results.xs .webkite-sort-area > .webkite-toggle {
+  width: 100%; }
+#webkite-results.xs .webkite-sort-area > .webkite-toggle i {
+  float: right;
+  margin-top: 5px; }
+#webkite-results.xs .sort-menu {
+  width: 95%; }
+#webkite-results.xs .webkite-sort-area + .webkite-filter-area {
+  margin-top: 20px; }
+#webkite-results.xs .webkite-filter-area {
+  margin-left: 0;
+  padding-left: 0; }
+#webkite-results.xs .webkite-branding-area {
+  padding-bottom: 20px; }
+#webkite-results.xs .webkite-results-footer {
+  height: 110px; }
+
+#webkite-results.sm .webkite-filter-area, #webkite-results.sm .webkite-sort-area, #webkite-results.sm .webkite-sort-area > .webkite-toggle {
+  width: 100%; }
+#webkite-results.sm .webkite-sort-area > .webkite-toggle i {
+  float: right;
+  margin-top: 5px; }
+#webkite-results.sm .sort-menu {
+  width: 95%; }
+#webkite-results.sm .webkite-sort-area + .webkite-filter-area {
+  margin-top: 20px; }
+#webkite-results.sm .webkite-filter-area {
+  margin-left: 0;
+  padding-left: 0; }
+
 /* RESET */
 #webkite-results {
   /* HTML5 display-role reset for older browsers */ }
@@ -686,21 +721,9 @@
   border-bottom: 1px dotted rgba(0, 0, 0, 0.1); }
 
 /************************************** ELEMENT QUERIES */
-#webkite-results.xs .webkite-block, #webkite-results.xs .webkite-title-area, #webkite-results.xs .webkite-branding-area, #webkite-results.xs .webkite-pagination-area {
+#webkite-results.xs .webkite-block {
   width: 100%;
   padding-right: 0; }
-#webkite-results.xs .webkite-filter-area, #webkite-results.xs .webkite-sort-area, #webkite-results.xs .webkite-sort-area > .webkite-toggle {
-  width: 100%; }
-#webkite-results.xs .webkite-sort-area > .webkite-toggle i {
-  float: right;
-  margin-top: 5px; }
-#webkite-results.xs .sort-menu {
-  width: 95%; }
-#webkite-results.xs .webkite-sort-area + .webkite-filter-area {
-  margin-top: 20px; }
-#webkite-results.xs .webkite-filter-area {
-  margin-left: 0;
-  padding-left: 0; }
 #webkite-results.xs .webkite-block ul li b, #webkite-results.xs .webkite-block ul li a, #webkite-results.xs .webkite-block ul li span {
   width: 100%; }
 #webkite-results.xs .webkite-block ul li .webkite-toggle {
@@ -708,8 +731,6 @@
 #webkite-results.xs .webkite-block .inline-filter-menu li a {
   max-width: 100%;
   width: auto; }
-#webkite-results.xs .webkite-title-area, #webkite-results.xs .webkite-branding-area, #webkite-results.xs .webkite-pagination-area {
-  text-align: center; }
 #webkite-results.xs .webkite-image-wrapper {
   margin-bottom: 8px; }
   #webkite-results.xs .webkite-image-wrapper img {
@@ -727,23 +748,7 @@
   line-height: 0.85em; }
 #webkite-results.xs .webkite-result-body .webkite-price-label {
   font-size: 0.65em; }
-#webkite-results.xs .webkite-branding-area {
-  padding-bottom: 20px; }
-#webkite-results.xs .webkite-results-footer {
-  height: 110px; }
 
-#webkite-results.sm .webkite-filter-area, #webkite-results.sm .webkite-sort-area, #webkite-results.sm .webkite-sort-area > .webkite-toggle {
-  width: 100%; }
-#webkite-results.sm .webkite-sort-area > .webkite-toggle i {
-  float: right;
-  margin-top: 5px; }
-#webkite-results.sm .sort-menu {
-  width: 95%; }
-#webkite-results.sm .webkite-sort-area + .webkite-filter-area {
-  margin-top: 20px; }
-#webkite-results.sm .webkite-filter-area {
-  margin-left: 0;
-  padding-left: 0; }
 #webkite-results.sm .webkite-block ul li b, #webkite-results.sm .webkite-block ul li a, #webkite-results.sm .webkite-block ul li span {
   width: 100%; }
 #webkite-results.sm .webkite-block ul li .webkite-toggle {
