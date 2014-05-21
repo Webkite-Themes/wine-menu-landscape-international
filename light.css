@@ -14,7 +14,7 @@
   width: 95%; }
 #webkite-results.xs .webkite-sort-area + .webkite-filter-area {
   margin-top: 20px; }
-#webkite-results.xs .webkite-filter-area {
+#webkite-results.xs .webkite-filter-area, #webkite-results.xs .webkite-sort-area + .webkite-filter-area {
   margin-left: 0;
   padding-left: 0; }
 #webkite-results.xs .webkite-branding-area {
@@ -31,7 +31,7 @@
   width: 95%; }
 #webkite-results.sm .webkite-sort-area + .webkite-filter-area {
   margin-top: 20px; }
-#webkite-results.sm .webkite-filter-area {
+#webkite-results.sm .webkite-filter-area, #webkite-results.sm .webkite-sort-area + .webkite-filter-area {
   margin-left: 0;
   padding-left: 0; }
 

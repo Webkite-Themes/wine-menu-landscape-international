@@ -587,7 +587,8 @@ $tokenFifth: #6f7ca8;
     }
   .sort-menu{width: 95%;}
   .webkite-sort-area+.webkite-filter-area{ margin-top: $mainGutter;}
-  .webkite-filter-area{
+  .webkite-filter-area,
+  .webkite-sort-area + .webkite-filter-area{
     margin-left: 0;
     padding-left: 0;
     }
@@ -603,7 +604,8 @@ $tokenFifth: #6f7ca8;
     }
   .sort-menu{width: 95%;}
   .webkite-sort-area+.webkite-filter-area{ margin-top: $mainGutter;}
-  .webkite-filter-area{
+  .webkite-filter-area,
+  .webkite-sort-area + .webkite-filter-area{
     margin-left: 0;
     padding-left: 0;
     }
