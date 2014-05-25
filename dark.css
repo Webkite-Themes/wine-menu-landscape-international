@@ -604,6 +604,7 @@
 #webkite-results .webkite-prices {
   height: 100%;
   display: table;
+  table-layout: fixed;
   width: 100%; }
   #webkite-results .webkite-prices > .webkite-block {
     display: table-cell;
@@ -616,6 +617,12 @@
   line-height: 0.85em;
   width: 100%;
   color: rgba(255, 255, 255, 0.8); }
+#webkite-results .webkite-price-value {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
 #webkite-results .webkite-price-label {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 0.65em;

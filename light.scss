@@ -131,6 +131,7 @@ $imageWidthMd: 100px;
   .webkite-prices {
     height:100%;
     display:table;
+    table-layout:fixed;
     width:100%;
     & > .webkite-block {
       display:table-cell;
@@ -145,6 +146,13 @@ $imageWidthMd: 100px;
     line-height:0.85em;
     width: 100%;
     color:$medOpacity;
+    }
+  .webkite-price-value {
+    display:inline-block;
+    max-width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
     }
   .webkite-price-label{
     font-family: 'Open Sans', 'Arial', sans-serif;
