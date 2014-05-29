@@ -614,7 +614,7 @@
   display: inline-block;
   font-family: 'Libre Baskerville', 'Georgia', serif;
   font-size: 1.3em;
-  line-height: 0.85em;
+  line-height: 1;
   width: 100%;
   color: rgba(255, 255, 255, 0.8); }
 #webkite-results .webkite-price-value {
@@ -744,7 +744,7 @@
   #webkite-results.xs .webkite-image-wrapper img {
     width: 100%; }
 #webkite-results.xs .webkite-result-body .webkite-prices {
-  margin-top: 8px; }
+  margin-top: 5px; }
   #webkite-results.xs .webkite-result-body .webkite-prices > .webkite-block {
     width: 50%;
     display: inline-block;
@@ -753,9 +753,17 @@
 #webkite-results.xs .webkite-result-body .webkite-price {
   display: inline;
   font-size: 1.3em;
-  line-height: 0.85em; }
+  text-align: left; }
+#webkite-results.xs .webkite-result-body .webkite-price-value {
+  vertical-align: bottom; }
 #webkite-results.xs .webkite-result-body .webkite-price-label {
-  font-size: 0.65em; }
+  font-size: 12px;
+  display: inline-block;
+  width: auto;
+  overflow: hidden;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px; }
 
 #webkite-results.sm .webkite-block ul li b, #webkite-results.sm .webkite-block ul li a, #webkite-results.sm .webkite-block ul li span {
   width: 100%; }
@@ -769,7 +777,7 @@
 #webkite-results.sm .webkite-block.webkite-block-seventy {
   width: 100%; }
 #webkite-results.sm .webkite-result-body .webkite-prices {
-  margin-top: 8px; }
+  margin-top: 5px; }
   #webkite-results.sm .webkite-result-body .webkite-prices > .webkite-block {
     display: inline-block;
     vertical-align: top;
@@ -777,9 +785,17 @@
 #webkite-results.sm .webkite-result-body .webkite-price {
   display: inline;
   font-size: 1.3em;
-  line-height: 0.85em; }
+  text-align: left; }
+#webkite-results.sm .webkite-result-body .webkite-price-value {
+  vertical-align: bottom; }
 #webkite-results.sm .webkite-result-body .webkite-price-label {
-  font-size: 0.65em; }
+  font-size: 12px;
+  display: inline-block;
+  width: auto;
+  overflow: hidden;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px; }
 
 #webkite-results.md .webkite-image-wrapper {
   width: 100px;
@@ -792,7 +808,8 @@
   margin-left: 0; }
 #webkite-results.md .webkite-price-label {
   width: 100%;
-  display: block; }
+  display: block;
+  margin-top: -2px; }
 
 /*************************** DISPLAY RULES */
 #webkite-results.xs .md-only {
