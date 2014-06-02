@@ -131,6 +131,7 @@ $imageWidthMd: 100px;
   .webkite-prices {
     height:100%;
     display:table;
+    table-layout:fixed;
     width:100%;
     & > .webkite-block {
       display:table-cell;
@@ -142,9 +143,16 @@ $imageWidthMd: 100px;
     display: inline-block;
     font-family:'Libre Baskerville', 'Georgia', serif;
     font-size:1.3em;
-    line-height:0.85em;
+    line-height:1;
     width: 100%;
     color:$medOpacity;
+    }
+  .webkite-price-value {
+    display:inline-block;
+    max-width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
     }
   .webkite-price-label{
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -251,20 +259,9 @@ $imageWidthMd: 100px;
   
 /************************************** ELEMENT QUERIES */
 #webkite-results.xs{
-  .webkite-block,.webkite-title-area, .webkite-branding-area, .webkite-pagination-area{
+  .webkite-block{
     width: 100%;
     padding-right: 0;
-    }
-  .webkite-filter-area, .webkite-sort-area, .webkite-sort-area > .webkite-toggle{width: 100%;}
-  .webkite-sort-area > .webkite-toggle i{
-    float: right; 
-    margin-top: $mainGutter/4;
-    }
-  .sort-menu{width: 95%;}
-  .webkite-sort-area+.webkite-filter-area{ margin-top: $mainGutter;}
-  .webkite-filter-area{
-    margin-left: 0;
-    padding-left: 0;
     }
   .webkite-block ul li{
     b, a, span{width: 100%;}
@@ -274,7 +271,6 @@ $imageWidthMd: 100px;
     max-width: 100%;
     width: auto;
     }
-  .webkite-title-area, .webkite-branding-area, .webkite-pagination-area{text-align: center;}
   .webkite-image-wrapper {
     margin-bottom:$mainGutter/2.5;
     img {
@@ -283,7 +279,7 @@ $imageWidthMd: 100px;
     }
   .webkite-result-body{
     .webkite-prices {
-      margin-top:$mainGutter/2.5;
+      margin-top:$mainGutter/4;
       & > .webkite-block {
         width:50%;
         display:inline-block;
@@ -294,28 +290,24 @@ $imageWidthMd: 100px;
     .webkite-price{
       display: inline;
       font-size:1.3em;
-      line-height:0.85em;
+      text-align:left;
+      }
+    .webkite-price-value {
+      vertical-align:bottom;
       }
     .webkite-price-label{
-      font-size:0.65em;
+      font-size:12px;
+      display:inline-block;
+      width:auto;
+      overflow:hidden;
+      vertical-align:bottom;
+      position:relative;
+      top:-1px;
       }
     }
-  .webkite-branding-area{padding-bottom: $mainGutter;}
-  .webkite-results-footer{height: $mainGutter*5.5;}
   }
   
 #webkite-results.sm{
-  .webkite-filter-area, .webkite-sort-area, .webkite-sort-area > .webkite-toggle{ width: 100%; }
-  .webkite-sort-area > .webkite-toggle i{
-    float: right; 
-    margin-top: $mainGutter/4;
-    }
-  .sort-menu{width: 95%;}
-  .webkite-sort-area+.webkite-filter-area{ margin-top: $mainGutter;}
-  .webkite-filter-area{
-    margin-left: 0;
-    padding-left: 0;
-    }
   .webkite-block ul li{
     b, a, span{width: 100%;}
     .webkite-toggle{width: auto;}
@@ -328,7 +320,7 @@ $imageWidthMd: 100px;
   .webkite-block.webkite-block-seventy {width:100%;}
   .webkite-result-body{
     .webkite-prices {
-      margin-top:$mainGutter/2.5;
+      margin-top:$mainGutter/4;
       & > .webkite-block {
         display:inline-block;
         vertical-align:top;
@@ -338,10 +330,19 @@ $imageWidthMd: 100px;
     .webkite-price{
       display: inline;
       font-size:1.3em;
-      line-height:0.85em;
+      text-align:left;
+      }
+    .webkite-price-value {
+      vertical-align:bottom;        
       }
     .webkite-price-label{
-      font-size:0.65em;
+      font-size:12px;
+      display:inline-block;
+      width:auto;
+      overflow:hidden;
+      vertical-align:bottom;
+      position:relative;
+      top:-1px;
       }
     }
   }
@@ -356,7 +357,7 @@ $imageWidthMd: 100px;
     }
   .webkite-prices-wrap {padding-left:0;}
   .webkite-prices {margin-left:0;}
-  .webkite-price-label {width:100%; display:block;}
+  .webkite-price-label {width:100%; display:block; margin-top:-2px;}
   }
 
 /*************************** DISPLAY RULES */
